@@ -74,6 +74,24 @@ body{
   color: #fff;
 }
 
+.gravatar{
+    position:fixed;
+    top:115px;
+    left:10px;
+}
+
+.gravatar a{
+    display:block;
+    float:left;
+    border:3px solid #333;
+}
+
+.gravatar a:hover{
+    display:block;
+    float:left;
+    border:3px solid #666;
+}
+
 .filter_box{
     margin:0 auto 0 auto;
     display:block;
