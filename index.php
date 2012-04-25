@@ -28,4 +28,12 @@
 			</ul>
 		</li>
 	</ul>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').each(function(){
+				$(this).attr('target','_blank');
+			});
+		});
+	</script>
 </body>
