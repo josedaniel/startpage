@@ -4,11 +4,16 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 <body>
+	<div class="filter_box">
+		<form>
+			Filter: <input type="text" class="filter" />
+		</form>
+	</div>
 	<ul class="level_0">
 		<li>
 			<h2 style="border-bottom-color:#B65051">Development</h2>
 			<ul class="level_1">
-				<li><a href="http://zambo.josepatenina.dev">Zambo [local]</a></li>
+				<li><a href="http://zambo.josepaternina.dev">Zambo [local]</a></li>
 					<li><a href="http://carlosprieto.net">Blog de Carlos Prieto</a></li>
 				<li><a href="http://zambodev.8manos.in">Zambo [dev]</a></li>
 					<li><a href="http://plazaencasa.com">Plaza en Casa [produccion]</a></li>
@@ -29,11 +34,14 @@
 		</li>
 	</ul>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="quicksearch.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('a').each(function(){
 				$(this).attr('target','_blank');
 			});
+			$('input.filter').quicksearch('.level_1 li');
+			$('input.filter').focus();
 		});
 	</script>
 </body>
