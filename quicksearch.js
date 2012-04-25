@@ -1,3 +1,5 @@
+//As seen in https://github.com/riklomas/quicksearch
+
 (function($, window, document, undefined) {
 	$.fn.quicksearch = function (target, opt) {
 		
