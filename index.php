@@ -1,6 +1,7 @@
 <!doctype html>
 <charset="utf-8">
 <title>@josedaniel startpage</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
 <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 <body>
 	<ul class="level_0">
